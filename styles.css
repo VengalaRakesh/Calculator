@@ -1,0 +1,50 @@
+
+/* Styles for the grid container */
+.grid-container{
+    display: grid; /* Use CSS Grid layout */
+    grid-template-columns: repeat(5, 55px); /* Create 5 columns each with a width of 55px */
+    grid-template-rows: repeat(5, 55px); /* Create 5 rows each with a height of 55px */
+    grid-gap: 14px; /* Gap between grid items */
+    height: 350px; /* Height of the grid container */
+    width:350px; /* Width of the grid container */
+    background-color: black; /* Background color of the grid container */
+}
+
+button:hover {
+    background-color: #8cb300; /* Giving hovering for the buttons */
+}
+
+p{
+    background-color: black; /* Background color of the paragraph */
+    width:350px; /* Making width of 350 for paragraph */
+    margin: 0px; /* Remove default margin for paragraphs */
+}
+ 
+button,input{
+    width: 55px; /* Adjusting width of cells */
+    height: 50px; /* Adjusting height of cells */
+    margin: 10px; /*Adjusting margin */
+    font-weight: bold; /*Changing font to bold */
+    font-size: 25px; /*Changing font-size */
+    border-radius: 10px;
+}
+
+h1{
+    font-weight: bold; /*Changing font to bold */
+    font-size: 40px; /*Changing font-size */
+}
+
+#status{
+    background-color: aquamarine; /* Changing background color for the on/off button */
+    font-size: 20px; /* Changing font-size */
+}
+
+#b1{
+    background-color: rgba(255, 0, 0, 0.826); /* Changing background color for the DEL and AC buttons */
+    color: white; /* Changing text colr */
+    font-size: 20px; /* Changing font-size */
+}
+
+#b2{
+    color: white;; /* Changing text colr */
+}
