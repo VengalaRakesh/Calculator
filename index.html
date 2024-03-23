@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <!-- Using Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- Adding external CSS -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Adding external script file -->
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <center>
+            <!-- Heading of the calculator -->
+            <h1>CALCULATOR</h1>
+            <div>
+                <!-- Text box for displaying the input and results -->
+                <p><input id="tb" value="" type="text" style="width:330px;" readonly/></p>
+            </div>
+
+            <!-- Grid container for buttons -->
+            <div class="grid-container">
+                <!-- Delete and Clear buttons -->
+                <div><button disabled  id="b1" onclick="deleteCharacter()">DEL</button></div>
+                <div><button disabled id="b1" onclick="tb.value=''">AC</button></div>
+                <!-- Square root and Cube root buttons -->
+                <div><button disabled onclick="squareRoot()"><math><msqrt><mi>x</mi></msqrt></math></button></div>
+                <div><button disabled onclick="cubeRoot()"><math><mroot><mi>x</mi><mi>3</mi></mroot></math></button></div>
+                <!-- Button for switching on and off -->
+                <div><input type="button" value="OFF" id="status" onclick="toggleButton()"/></div>
+
+                <!-- Number and operator buttons -->
+                <div><button disabled onclick="fun(7)">7</button></div>
+                <div><button disabled onclick="fun(8)">8</button></div>
+                <div><button disabled onclick="fun(9)">9</button></div>
+                <div><button disabled onclick="fun('/')">/</button></div>
+                <div><button disabled onclick="square()">x<sup>2</sup></button></div>
+
+
+                <div><button disabled onclick="fun(4)">4</button></div>
+                <div><button disabled onclick="fun(5)">5</button></div>
+                <div><button disabled onclick="fun(6)">6</button></div>
+                <div><button disabled onclick="fun('*')">*</button></div>
+                <div><button disabled onclick="fun('%')">%</button></div>
+
+
+                <div><button disabled onclick="fun(1)">1</button></div>
+                <div><button disabled onclick="fun(2)">2</button></div>
+                <div><button disabled onclick="fun(3)">3</button></div>
+                <div><button disabled onclick="fun('-')">-</button></div>
+                <div><button disabled onclick="fun('(')">(</button></div>
+                
+                <div><button disabled onclick="fun('.')">.</button></div>
+                <div><button disabled onclick="fun(0)">0</button></div>
+                <div><button id="b2" class="btn btn-primary" disabled onclick="equal()">=</button></div>
+                <div><button disabled onclick="fun('+')">+</button></div>
+                <div><button disabled onclick="fun(')')">)</button></div>
+            </div>
+        </center>
+    </body>
+</html>
